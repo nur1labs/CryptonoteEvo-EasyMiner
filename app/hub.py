@@ -1,7 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-## Copyright (c) 2017, The Sumokoin Project (www.sumokoin.org)
-## Copyright (c) 2018, [ ] Project
 
 '''
 This is a central communication hub between Python codes and web UI
@@ -92,7 +90,7 @@ class Hub(QObject):
             else:
                 QMessageBox.warning(self.ui, "Wallet Address Required", \
                     "Wallet address is required to start mining!<br><br>\
-                    Hint: You can get a new address from:<br><br><b>https://wallet.cryptonote.com</b>")
+                    Hint: You can get a new address from:<br><br><b>https://wallet.evonote.com</b>")
                 self.on_stop_mining_event.emit(pool_info["id"]) 
                 return
         
@@ -328,7 +326,7 @@ class Hub(QObject):
                 pool_url = "stratum+tcp://" + pool_url
             url = urlparse.urlparse(pool_url.strip())
             if not url.hostname:
-                QMessageBox.warning(self.add_pool_dialog,'Add/Edit Pool Error', "Pool URL (e.g. pool.cryptonote.com) is required.")
+                QMessageBox.warning(self.add_pool_dialog,'Add/Edit Pool Error', "Pool URL (e.g. pool.evonote.com) is required.")
                 return
                  
             if not url.port:
@@ -343,7 +341,7 @@ class Hub(QObject):
             url_host = url.hostname
         except Exception, e:
             log("Invalid pool URL: " + str(e), LEVEL_ERROR)
-            QMessageBox.warning(self.add_pool_dialog, 'Add/Edit Pool Error', "Invalid pool URL!<br><br>Pool URL must be in form of <b>URL:Port</b><br> like <b>pool.cryptonote.com:3333</b>")
+            QMessageBox.warning(self.add_pool_dialog, 'Add/Edit Pool Error', "Invalid pool URL!<br><br>Pool URL must be in form of <b>URL:Port</b><br> like <b>pool.evonote.com:3333</b>")
             return
         
         if pool_id == "":
@@ -473,7 +471,7 @@ class Hub(QObject):
              QMessageBox.Yes | QMessageBox.No, defaultButton=QMessageBox.Yes)
         
         if result == QMessageBox.No: return
-        self.open_link("https://wallet.cryptonote.com")
+        self.open_link("https://wallet.evonote.com")
         
             
     def update_hashrate(self, hash_rate):

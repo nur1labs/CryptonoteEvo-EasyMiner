@@ -1,7 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-## Copyright (c) 2017, The Sumokoin Project (www.sumokoin.org)
-## Copyright (c) 2018, [ ] Project
 '''
 Main app def
 '''
@@ -66,7 +64,7 @@ def main():
         
     # Application setup
     app = QSingleApplication(sys.argv)
-    app.setOrganizationName('Cryptonote')
+    app.setOrganizationName('nur1labs')
     app.setOrganizationDomain('nur1labs.net')
     app.setApplicationName(APP_NAME)
     app.setProperty("AppPath", app_path)
