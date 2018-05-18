@@ -1,7 +1,5 @@
 # CryptonoteEvo Easy Miner
 
-Copyright (c) 2018, nur1labs.net
-
 The most easy, intuitive CPU miner for cryptonote-based cryptocurrencies like SUMOKOIN (SUMO), Monero (XMR), Aeon (AEON) etc.
 
 ![](http://www.sumokoin.org/images/easy-miner-features_1080x1100.png)
@@ -15,7 +13,7 @@ The most easy, intuitive CPU miner for cryptonote-based cryptocurrencies like SU
 Need Compile.
 
 **Linux**
-- Clone `git clone https://github.com/Nur1Labs/CryptonoteEvo-EasyMiner`.
+- Clone `git clone https://github.com/Nur1Labs/CryptonoteEvo-EasyMiner.git`.
 - Clone `git clone https://github.com/Nur1Labs/CryptonoteEvo-Hash-Lib`.
 
 ### Install Dependencies
