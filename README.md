@@ -43,4 +43,6 @@ The last lines of the output should look something like this:
 - Start mining
 ```
 
-back to main page : https://github.com/FndNur1Labs/CryptonoteEvo
+## Donation Support
+
+https://github.com/FndNur1Labs/CryptonoteEvo
